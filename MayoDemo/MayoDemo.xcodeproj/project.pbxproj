@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0C589ABA97D97B01DD836F /* Pods_MayoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF412DFF4F24D59D7E173BD /* Pods_MayoDemo.framework */; };
+		81125B4FC08ABC3A2762BE96 /* Pods_MayoDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6328B9A68D5438E1F13F8159 /* Pods_MayoDemoUITests.framework */; };
+		96A6BC33231F5F8300C2F8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6BC32231F5F8300C2F8C5 /* AppDelegate.swift */; };
+		96A6BC35231F5F8300C2F8C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6BC34231F5F8300C2F8C5 /* ViewController.swift */; };
+		96A6BC38231F5F8300C2F8C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A6BC36231F5F8300C2F8C5 /* Main.storyboard */; };
+		96A6BC3A231F5F8500C2F8C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A6BC39231F5F8500C2F8C5 /* Assets.xcassets */; };
+		96A6BC3D231F5F8500C2F8C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A6BC3B231F5F8500C2F8C5 /* LaunchScreen.storyboard */; };
+		96A6BC48231F5F8500C2F8C5 /* MayoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6BC47231F5F8500C2F8C5 /* MayoDemoTests.swift */; };
+		96A6BC53231F5F8500C2F8C5 /* MayoDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6BC52231F5F8500C2F8C5 /* MayoDemoUITests.swift */; };
+		96A6BC64231F5FD800C2F8C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6BC60231F5FD800C2F8C5 /* NetworkManager.swift */; };
+		96A6BC65231F5FD800C2F8C5 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6BC61231F5FD800C2F8C5 /* Results.swift */; };
+		96A6BC66231F5FD800C2F8C5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6BC62231F5FD800C2F8C5 /* API.swift */; };
+		96A6BC67231F5FD800C2F8C5 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A6BC63231F5FD800C2F8C5 /* Networkable.swift */; };
+		A8024E9908597DCE5918F407 /* Pods_MayoDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87EF8BA0327A674D1F8C038 /* Pods_MayoDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96A6BC44231F5F8500C2F8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A6BC27231F5F8300C2F8C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A6BC2E231F5F8300C2F8C5;
+			remoteInfo = MayoDemo;
+		};
+		96A6BC4F231F5F8500C2F8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96A6BC27231F5F8300C2F8C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96A6BC2E231F5F8300C2F8C5;
+			remoteInfo = MayoDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		136BBD63D96BBDE4D35D6C75 /* Pods-MayoDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayoDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-MayoDemoTests/Pods-MayoDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		208C37AC758302877B13A04C /* Pods-MayoDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayoDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MayoDemoUITests/Pods-MayoDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A5BF71393E11D224F3D2326 /* Pods-MayoDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayoDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MayoDemoTests/Pods-MayoDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6328B9A68D5438E1F13F8159 /* Pods_MayoDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayoDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9E4CD79FB3B885ECA7327F /* Pods-MayoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayoDemo.release.xcconfig"; path = "Target Support Files/Pods-MayoDemo/Pods-MayoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8676124ED5AD2B5E00CF1247 /* Pods-MayoDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayoDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-MayoDemoUITests/Pods-MayoDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		96A6BC2F231F5F8300C2F8C5 /* MayoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A6BC32231F5F8300C2F8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96A6BC34231F5F8300C2F8C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96A6BC37231F5F8300C2F8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96A6BC39231F5F8500C2F8C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96A6BC3C231F5F8500C2F8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96A6BC3E231F5F8500C2F8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A6BC43231F5F8500C2F8C5 /* MayoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A6BC47231F5F8500C2F8C5 /* MayoDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayoDemoTests.swift; sourceTree = "<group>"; };
+		96A6BC49231F5F8500C2F8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A6BC4E231F5F8500C2F8C5 /* MayoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A6BC52231F5F8500C2F8C5 /* MayoDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayoDemoUITests.swift; sourceTree = "<group>"; };
+		96A6BC54231F5F8500C2F8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A6BC60231F5FD800C2F8C5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		96A6BC61231F5FD800C2F8C5 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		96A6BC62231F5FD800C2F8C5 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		96A6BC63231F5FD800C2F8C5 /* Networkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		B87EF8BA0327A674D1F8C038 /* Pods_MayoDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayoDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D284FF0998B9585E3D7207F0 /* Pods-MayoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayoDemo.debug.xcconfig"; path = "Target Support Files/Pods-MayoDemo/Pods-MayoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EAF412DFF4F24D59D7E173BD /* Pods_MayoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96A6BC2C231F5F8300C2F8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0C589ABA97D97B01DD836F /* Pods_MayoDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A6BC40231F5F8500C2F8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8024E9908597DCE5918F407 /* Pods_MayoDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A6BC4B231F5F8500C2F8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81125B4FC08ABC3A2762BE96 /* Pods_MayoDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041DE3EF74DAC1BA49DC9C88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D284FF0998B9585E3D7207F0 /* Pods-MayoDemo.debug.xcconfig */,
+				7E9E4CD79FB3B885ECA7327F /* Pods-MayoDemo.release.xcconfig */,
+				136BBD63D96BBDE4D35D6C75 /* Pods-MayoDemoTests.debug.xcconfig */,
+				2A5BF71393E11D224F3D2326 /* Pods-MayoDemoTests.release.xcconfig */,
+				208C37AC758302877B13A04C /* Pods-MayoDemoUITests.debug.xcconfig */,
+				8676124ED5AD2B5E00CF1247 /* Pods-MayoDemoUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2A42EC4D208C403299A30208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAF412DFF4F24D59D7E173BD /* Pods_MayoDemo.framework */,
+				B87EF8BA0327A674D1F8C038 /* Pods_MayoDemoTests.framework */,
+				6328B9A68D5438E1F13F8159 /* Pods_MayoDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96A6BC26231F5F8300C2F8C5 = {
+			isa = PBXGroup;
+			children = (
+				96A6BC31231F5F8300C2F8C5 /* MayoDemo */,
+				96A6BC46231F5F8500C2F8C5 /* MayoDemoTests */,
+				96A6BC51231F5F8500C2F8C5 /* MayoDemoUITests */,
+				96A6BC30231F5F8300C2F8C5 /* Products */,
+				041DE3EF74DAC1BA49DC9C88 /* Pods */,
+				2A42EC4D208C403299A30208 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96A6BC30231F5F8300C2F8C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96A6BC2F231F5F8300C2F8C5 /* MayoDemo.app */,
+				96A6BC43231F5F8500C2F8C5 /* MayoDemoTests.xctest */,
+				96A6BC4E231F5F8500C2F8C5 /* MayoDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96A6BC31231F5F8300C2F8C5 /* MayoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				96A6BC32231F5F8300C2F8C5 /* AppDelegate.swift */,
+				96A6BC34231F5F8300C2F8C5 /* ViewController.swift */,
+				96A6BC62231F5FD800C2F8C5 /* API.swift */,
+				96A6BC63231F5FD800C2F8C5 /* Networkable.swift */,
+				96A6BC60231F5FD800C2F8C5 /* NetworkManager.swift */,
+				96A6BC61231F5FD800C2F8C5 /* Results.swift */,
+				96A6BC36231F5F8300C2F8C5 /* Main.storyboard */,
+				96A6BC39231F5F8500C2F8C5 /* Assets.xcassets */,
+				96A6BC3B231F5F8500C2F8C5 /* LaunchScreen.storyboard */,
+				96A6BC3E231F5F8500C2F8C5 /* Info.plist */,
+			);
+			path = MayoDemo;
+			sourceTree = "<group>";
+		};
+		96A6BC46231F5F8500C2F8C5 /* MayoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				96A6BC47231F5F8500C2F8C5 /* MayoDemoTests.swift */,
+				96A6BC49231F5F8500C2F8C5 /* Info.plist */,
+			);
+			path = MayoDemoTests;
+			sourceTree = "<group>";
+		};
+		96A6BC51231F5F8500C2F8C5 /* MayoDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96A6BC52231F5F8500C2F8C5 /* MayoDemoUITests.swift */,
+				96A6BC54231F5F8500C2F8C5 /* Info.plist */,
+			);
+			path = MayoDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96A6BC2E231F5F8300C2F8C5 /* MayoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A6BC57231F5F8500C2F8C5 /* Build configuration list for PBXNativeTarget "MayoDemo" */;
+			buildPhases = (
+				88F4297DE8188B29F47D05FF /* [CP] Check Pods Manifest.lock */,
+				96A6BC2B231F5F8300C2F8C5 /* Sources */,
+				96A6BC2C231F5F8300C2F8C5 /* Frameworks */,
+				96A6BC2D231F5F8300C2F8C5 /* Resources */,
+				DD6FA25658197F73AB141342 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MayoDemo;
+			productName = MayoDemo;
+			productReference = 96A6BC2F231F5F8300C2F8C5 /* MayoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96A6BC42231F5F8500C2F8C5 /* MayoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A6BC5A231F5F8500C2F8C5 /* Build configuration list for PBXNativeTarget "MayoDemoTests" */;
+			buildPhases = (
+				7F82365550C9195149C47753 /* [CP] Check Pods Manifest.lock */,
+				96A6BC3F231F5F8500C2F8C5 /* Sources */,
+				96A6BC40231F5F8500C2F8C5 /* Frameworks */,
+				96A6BC41231F5F8500C2F8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A6BC45231F5F8500C2F8C5 /* PBXTargetDependency */,
+			);
+			name = MayoDemoTests;
+			productName = MayoDemoTests;
+			productReference = 96A6BC43231F5F8500C2F8C5 /* MayoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96A6BC4D231F5F8500C2F8C5 /* MayoDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A6BC5D231F5F8500C2F8C5 /* Build configuration list for PBXNativeTarget "MayoDemoUITests" */;
+			buildPhases = (
+				7589A3591879BD8A4EEFA53D /* [CP] Check Pods Manifest.lock */,
+				96A6BC4A231F5F8500C2F8C5 /* Sources */,
+				96A6BC4B231F5F8500C2F8C5 /* Frameworks */,
+				96A6BC4C231F5F8500C2F8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96A6BC50231F5F8500C2F8C5 /* PBXTargetDependency */,
+			);
+			name = MayoDemoUITests;
+			productName = MayoDemoUITests;
+			productReference = 96A6BC4E231F5F8500C2F8C5 /* MayoDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96A6BC27231F5F8300C2F8C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = wlyd;
+				TargetAttributes = {
+					96A6BC2E231F5F8300C2F8C5 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					96A6BC42231F5F8500C2F8C5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 96A6BC2E231F5F8300C2F8C5;
+					};
+					96A6BC4D231F5F8500C2F8C5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 96A6BC2E231F5F8300C2F8C5;
+					};
+				};
+			};
+			buildConfigurationList = 96A6BC2A231F5F8300C2F8C5 /* Build configuration list for PBXProject "MayoDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96A6BC26231F5F8300C2F8C5;
+			productRefGroup = 96A6BC30231F5F8300C2F8C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96A6BC2E231F5F8300C2F8C5 /* MayoDemo */,
+				96A6BC42231F5F8500C2F8C5 /* MayoDemoTests */,
+				96A6BC4D231F5F8500C2F8C5 /* MayoDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96A6BC2D231F5F8300C2F8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A6BC3D231F5F8500C2F8C5 /* LaunchScreen.storyboard in Resources */,
+				96A6BC3A231F5F8500C2F8C5 /* Assets.xcassets in Resources */,
+				96A6BC38231F5F8300C2F8C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A6BC41231F5F8500C2F8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A6BC4C231F5F8500C2F8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7589A3591879BD8A4EEFA53D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayoDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F82365550C9195149C47753 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayoDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F4297DE8188B29F47D05FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayoDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6FA25658197F73AB141342 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MayoDemo/Pods-MayoDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MayoDemo/Pods-MayoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96A6BC2B231F5F8300C2F8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A6BC64231F5FD800C2F8C5 /* NetworkManager.swift in Sources */,
+				96A6BC35231F5F8300C2F8C5 /* ViewController.swift in Sources */,
+				96A6BC65231F5FD800C2F8C5 /* Results.swift in Sources */,
+				96A6BC33231F5F8300C2F8C5 /* AppDelegate.swift in Sources */,
+				96A6BC67231F5FD800C2F8C5 /* Networkable.swift in Sources */,
+				96A6BC66231F5FD800C2F8C5 /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A6BC3F231F5F8500C2F8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A6BC48231F5F8500C2F8C5 /* MayoDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96A6BC4A231F5F8500C2F8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A6BC53231F5F8500C2F8C5 /* MayoDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96A6BC45231F5F8500C2F8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A6BC2E231F5F8300C2F8C5 /* MayoDemo */;
+			targetProxy = 96A6BC44231F5F8500C2F8C5 /* PBXContainerItemProxy */;
+		};
+		96A6BC50231F5F8500C2F8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96A6BC2E231F5F8300C2F8C5 /* MayoDemo */;
+			targetProxy = 96A6BC4F231F5F8500C2F8C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96A6BC36231F5F8300C2F8C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A6BC37231F5F8300C2F8C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96A6BC3B231F5F8500C2F8C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A6BC3C231F5F8500C2F8C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96A6BC55231F5F8500C2F8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96A6BC56231F5F8500C2F8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96A6BC58231F5F8500C2F8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D284FF0998B9585E3D7207F0 /* Pods-MayoDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SBNXQDEE8;
+				INFOPLIST_FILE = MayoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..MayoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96A6BC59231F5F8500C2F8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9E4CD79FB3B885ECA7327F /* Pods-MayoDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SBNXQDEE8;
+				INFOPLIST_FILE = MayoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..MayoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96A6BC5B231F5F8500C2F8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136BBD63D96BBDE4D35D6C75 /* Pods-MayoDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SBNXQDEE8;
+				INFOPLIST_FILE = MayoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..MayoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayoDemo.app/MayoDemo";
+			};
+			name = Debug;
+		};
+		96A6BC5C231F5F8500C2F8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A5BF71393E11D224F3D2326 /* Pods-MayoDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SBNXQDEE8;
+				INFOPLIST_FILE = MayoDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..MayoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MayoDemo.app/MayoDemo";
+			};
+			name = Release;
+		};
+		96A6BC5E231F5F8500C2F8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208C37AC758302877B13A04C /* Pods-MayoDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SBNXQDEE8;
+				INFOPLIST_FILE = MayoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..MayoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MayoDemo;
+			};
+			name = Debug;
+		};
+		96A6BC5F231F5F8500C2F8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8676124ED5AD2B5E00CF1247 /* Pods-MayoDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SBNXQDEE8;
+				INFOPLIST_FILE = MayoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..MayoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MayoDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96A6BC2A231F5F8300C2F8C5 /* Build configuration list for PBXProject "MayoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A6BC55231F5F8500C2F8C5 /* Debug */,
+				96A6BC56231F5F8500C2F8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A6BC57231F5F8500C2F8C5 /* Build configuration list for PBXNativeTarget "MayoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A6BC58231F5F8500C2F8C5 /* Debug */,
+				96A6BC59231F5F8500C2F8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A6BC5A231F5F8500C2F8C5 /* Build configuration list for PBXNativeTarget "MayoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A6BC5B231F5F8500C2F8C5 /* Debug */,
+				96A6BC5C231F5F8500C2F8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A6BC5D231F5F8500C2F8C5 /* Build configuration list for PBXNativeTarget "MayoDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A6BC5E231F5F8500C2F8C5 /* Debug */,
+				96A6BC5F231F5F8500C2F8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96A6BC27231F5F8300C2F8C5 /* Project object */;
+}

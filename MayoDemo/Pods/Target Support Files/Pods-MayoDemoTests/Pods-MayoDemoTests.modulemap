@@ -1,0 +1,6 @@
+framework module Pods_MayoDemoTests {
+  umbrella header "Pods-MayoDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
